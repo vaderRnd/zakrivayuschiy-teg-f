@@ -13,4 +13,32 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page {
+}
+.header {
+}
+.header__title {
+}
+.header__description {
+}
+.main {
+}
+.main__list {
+}
+.list__list-item {
+}
+.list-item__article {
+}
+.article__heading {
+}
+.article__image {
+}
+.article__paragraph {
+}
+.footer {
 }
