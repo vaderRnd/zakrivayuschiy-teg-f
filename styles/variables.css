@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+
+  /* Шрифты */
+  --main-font: 'Inter-Variable', sans-serif;
+  --accent-font: 'PressStart2P', sans-serif;
+  --font-weight-text: 400;
+  --font-weight-title: 700;
+
+  /* Градиент */
+  --bg-grad-color-1: #d3d3d3;
+  --bg-grad-color-2: #e7e7e7;
+  --bg-grad-color-3: #1a1a1a;
+  --bg-color: #fff;
+
+  /* Рамка */
+  --border-color: #000;
+}

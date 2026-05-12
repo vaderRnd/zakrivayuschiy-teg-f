@@ -11,34 +11,124 @@
 */
 
 .page {
-  min-inline-size: 320px;
+  padding-block-start: 102px;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: repeating-linear-gradient(90deg,
+      var(--bg-grad-color-1) 0 2px,
+      transparent 2px 4px),
+    repeating-linear-gradient(180deg,
+      var(--bg-grad-color-1) 0 2px,
+      transparent 2px 4px),
+    linear-gradient(180deg,
+      var(--bg-grad-color-2) 0%,
+      var(--bg-grad-color-2) 0.01%,
+      var(--bg-grad-color-3) 100%);
+  background-position: center;
+  background-size: cover;
+  font-family: var(--main-font);
+}
+
+/* Хедер */
+.header {
+  min-inline-size: 375px;
+  max-inline-size: 696px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  font-family: var(--accent-font);
+}
+
+.header__title {
+  padding-block-start: 120px;
+  font-size: 49px;
+  font-weight: 400;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.header__description {
+  padding-block-start: 20px;
+  padding-block-end: 120px;
+  font-style: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+/* Главная настройки */
+.main {
+  padding-block-start: 102px;
+}
+
+.main__list {
+  padding-block-end: 54px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 54px;
+  min-inline-size: 375px;
+  max-inline-size: 696px;
+  width: 100%;
+}
+
+/* Стили списка */
+.list__list-item {
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+}
+
+.list-item__article {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page {
+/* Стили карточки */
+.card__heading {}
+
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
 }
-.header {
+
+.card__paragraph {
+  padding-block-start: 25px;
+  padding-block-end: 2px;
+  padding-inline-start: 25px;
+  padding-inline-end: 26.5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 117%;
 }
-.header__title {
-}
-.header__description {
-}
-.main {
-}
-.main__list {
-}
-.list__list-item {
-}
-.list-item__article {
-}
-.article__heading {
-}
-.article__image {
-}
-.article__paragraph {
-}
+
+/* Футер */
 .footer {
+  font-family: var(--accent-font);
+}
+
+/* Стили кнопок */
+.buttons {
+  padding-block-start: 23px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.card__like-button {}
+
+.card__icon-button {}
+
+.button__text {
+  font-family: var(--accent-font);
 }
